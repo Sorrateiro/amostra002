@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/estiloprimario.css">
+    <link rel="stylesheet" href="styles/estilosecundario.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="import" href="component.html">
+    <script src="scripts/funcao.js"></script>
+    <title>gst noticias</title>
+</head>
+<body onload="carregar()">
+   <header>
+    <div class="logo">
+        <img src="imagens/logo.png" alt="Logo do site"> <h1>GST Notícias</h1>
+        <div class="login" id="login">
+            <a href="login.html">Login</a>
+        </div>
+    </div>
+
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="noticias.html">Notícias</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+        <div class="search">
+            <input type="text" id="searchInput" placeholder="Pesquisar...">
+            <button onclick="pesquisar()">Buscar</button>
+        </div>
+    <div class="user-info" id="userInfo">
+        <span id="userName"></span>
+        <button id="logoutButton" onclick="logout()">Sair</button>
+    </div>
+
+   </header>
+    <main>
+          <section class="noticias">
+                <h2>Últimas Notícias</h2>
+                <div class="noticia-item">
+                 <h3>Título da Notícia 1</h3>
+                 <p>Descrição breve da notícia 1...</p>
+                 <a href="noticia1.html">Leia mais</a>
+                </div>
+                <div class="noticia-item">
+                 <h3>Título da Notícia 2</h3>
+                 <p>Descrição breve da notícia 2...</p>
+                 <a href="noticia2.html">Leia mais</a>
+                </div>
+                <!-- Mais notícias podem ser adicionadas aqui -->
+          </section>
+     </main>
+        <aside>
+            <h2>Notícias em Destaque</h2>
+            <ul>
+                <li><a href="noticia-destaque1.html">Notícia em Destaque 1</a></li>
+                <li><a href="noticia-destaque2.html">Notícia em Destaque 2</a></li>
+                <!-- Mais notícias em destaque podem ser adicionadas aqui -->
+            </ul>
+        </aside>
+        <div class="clear"></div>
+     <footer>
+          <p>&copy; 2023 GST Notícias. Todos os direitos reservados.</p>
+     </footer>
+    
+</body>
+</html>
